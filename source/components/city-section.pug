@@ -1,0 +1,16 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      h2.city-section__title.font-w-g-regular.font-s-44
+        span.font-w-g-bold Начните свой бизнес 
+        br
+        | прямо сейчас
+      .city-section__sub-title.font-s-20
+        | Проверьте, свободен ли ваш город 
+        br
+        | для работы по франшизе
+      form.city-section__form(data-feedback-form)
+        input.input(type="text" name="city" autocomplete="off" placeholder="Город")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn(type="submit") Проверить
+      include ../components/footer.pug

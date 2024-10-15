@@ -1,0 +1,85 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      .finances-section__box
+        .finances-section__box-left
+          .swiper-desktop
+            .finances-section__mini-desc-cards.swiper-wrapper
+              .finances-section__mini-desc-card.swiper-slide
+                img.finances-section__mini-desc-card-img(src="images/finances-section-mini-desc-card-img-1.jpg" loading="lazy" width="960" height="1240" alt="image")
+              .finances-section__mini-desc-card.swiper-slide
+                img.finances-section__mini-desc-card-img(src="images/finances-section-mini-desc-card-img-2.jpg" loading="lazy" width="960" height="1240" alt="image")
+              .finances-section__mini-desc-card.swiper-slide
+                img.finances-section__mini-desc-card-img(src="images/finances-section-mini-desc-card-img-3.jpg" loading="lazy" width="960" height="1240" alt="image")
+              .finances-section__mini-desc-card.swiper-slide
+                img.finances-section__mini-desc-card-img(src="images/finances-section-mini-desc-card-img-4.jpg" loading="lazy" width="960" height="1240" alt="image")
+            .desktop-pagination
+        .finances-section__box-right
+          h2.finances-section__title.font-w-g-regular.font-s-44
+            | Франшиза 
+            br.no-br
+            span.font-w-g-bold РОДВИЛ в цифрах
+          .finances-section__sub-title.font-w-g-regular.font-s-24
+            | Сотрудничая с нами вы можете 
+            br
+            | рассчитывать на:
+          .swiper-finances
+            .finances-section__cards.swiper-wrapper
+              .finances-section__card.swiper-slide
+                .finances-section__card-title.font-w-g-bold.font-s-32
+                  | от 113 500 
+                  span.font-w-m-bold.finances-section__card-ruble ₽
+                .font-s-18
+                  | средняя чистая 
+                  br.no-br
+                  | ежемесячная прибыль
+              .finances-section__card.swiper-slide
+                .finances-section__card-title.font-w-g-bold.font-s-32
+                  | от 2,27 млн 
+                  span.font-w-m-bold.finances-section__card-ruble ₽
+                .font-s-18
+                  | первоначальные 
+                  br.no-br
+                  | инвестиции
+              .finances-section__card.swiper-slide
+                .finances-section__card-title.font-w-g-bold.font-s-32
+                  | от 1,36 млн 
+                  span.font-w-m-bold.finances-section__card-ruble ₽
+                .font-s-18
+                  | средняя чистая 
+                  br.no-br
+                  | годовая прибыль
+              .finances-section__card.swiper-slide
+                .finances-section__card-title.font-w-g-bold.font-s-32 от 16,5%
+                .font-s-18
+                  | рентабельность по 
+                  br.no-br
+                  | чистой прибыли
+              .finances-section__card.swiper-slide
+                .finances-section__card-title.font-w-g-bold.font-s-32 3 месяца
+                .font-s-18
+                  | чтобы начать 
+                  br.no-br
+                  | зарабатывать
+              .finances-section__card.swiper-slide
+                .finances-section__card-title.font-w-g-bold.font-s-32 от 9 месяцев
+                .font-s-18
+                  | срок окупаемости 
+                  br.no-br
+                  | вашего бизнеса
+            .finances-pagination.swiper-progress-finances
+      .finances-section__bottom
+        .finances-section__bottom-text
+          .font-w-g-bold.font-s-30
+            span.font-w-g-regular Ознакомьтесь детально 
+            br.no-br
+            | с финансовыми расчетами 
+            br.no-br
+            | вашего будущего бизнеса
+          .font-s-20
+            | Скачайте финансовую модель РОДВИЛ
+        form.finances-section__form(data-feedback-form)
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          input.input(type="text" name="email" autocomplete="off" placeholder="E-mail")
+          button.btn(type="submit") Скачать

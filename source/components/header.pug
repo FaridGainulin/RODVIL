@@ -1,0 +1,11 @@
+header.header
+  .header__container
+    .header__brand-block
+      img.header__logo(src="images/logo-header.png" loading="lazy" width="591" height="147" alt="logo")
+      .header__brand.font-s-16 Франшиза частной <br> общеобразовательной школы
+    .header__connection-block
+      .header__call-me.font-s-16(data-remodal-target="modal-form-call-me") Заказать звонок
+      .header__connection
+        a(href="tel:+79000000000")
+          img.header__connection-icon(src="images/connection-icon.svg" loading="lazy" width="16" height="16" alt="icon")
+        include ../components/phone-number.pug

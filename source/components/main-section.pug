@@ -1,0 +1,38 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.font-w-g-bold.font-s-44
+        | Откройте свою 
+        br.no-br
+        | частную школу 
+        span.font-w-g-regular вместе 
+        br.no-br
+        span.font-w-g-regular с надежным партнером
+      .main-section__sub-title.font-w-g-regular.font-s-24
+        | Начните зарабатывать 
+        br.no-br
+        span.font-w-g-bold от 1,36 млн рублей в год, 
+        br.no-br
+        | занимаясь любимым делом
+      .main-section__text.font-s-20
+        | Получите подробный 
+        br.no-br
+        | план открытия
+      form.main-section__form(data-feedback-form)
+        input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn(type="submit") Получить
+      .swiper-main
+        .main-section__cards.swiper-wrapper
+          .main-section__card.swiper-slide.main-section__card-1
+            img.main-section__card-icon(src="images/main-section-card-icon.svg" loading="lazy" width="17" height="17" alt="icon")
+            .font-w-medium.font-s-18 Высокая рентабельность
+          .main-section__card.swiper-slide.main-section__card-2
+            img.main-section__card-icon(src="images/main-section-card-icon.svg" loading="lazy" width="17" height="17" alt="icon")
+            .font-w-medium.font-s-18 Поддержка на всех этапах
+          .main-section__card.swiper-slide.main-section__card-3
+            img.main-section__card-icon(src="images/main-section-card-icon.svg" loading="lazy" width="17" height="17" alt="icon")
+            .font-w-medium.font-s-18 Стабильная прибыль
+        .main-pagination.swiper-progress-main
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1538" height="1645" alt="image")

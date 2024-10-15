@@ -1,0 +1,91 @@
+.about-section
+  background-image: url('../images/about-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #A1DFE5
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0 222px 0
+    +above($breakpoints.sm)
+      overflow hidden
+      padding 50px 0 90px 0
+    +above($breakpoints.md)
+      padding 70px 0 120px 0
+    +above($breakpoints.xxl)
+      padding 100px 0 177px 0
+
+  &__title
+    padding 0 0 20px 0
+    color: #363067
+    text-align: center
+    +above($breakpoints.sm)
+      padding 0 0 30px 0
+    +above($breakpoints.md)
+      padding 0 0 35px 0
+    +above($breakpoints.xxl)
+      padding 0 0 40px 0
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-wrap: wrap
+      justify-content center
+      gap: 20px 235px
+    +above($breakpoints.md)
+      gap: 25px 300px
+    +above($breakpoints.xxl)
+      gap: 30px 420px
+
+  &__card
+    width 280px !important
+    height: 120px
+    padding 15px 10px
+    background: linear-gradient(205deg, #f8f8f8 0%, #f0f0f0 100%);
+    color: #343434
+    border-radius: 10px
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      border-radius: 15px
+      padding 20px 10px 20px 20px
+      width: 245px !important;
+      height: 155px;
+    +above($breakpoints.md)
+      border-radius: 20px
+      padding 25px 10px 20px 25px
+      width: 322px !important;
+      height: 205px;
+    +above($breakpoints.xxl)
+      padding 32px 10px 24px 33px
+      width 380px !important
+      height: 240px
+
+  &__card-1
+    background: linear-gradient(156deg, #363067 0%, #2449a8 100%);
+    color: #fff
+  &__card-4
+    background: linear-gradient(156deg, #2449a8 0%, #363067 100%);
+    color: #fff
+
+  &__img
+    position: absolute
+    z-index -1
+    width 280px
+    height: auto
+    bottom: -44px;
+    left: 10px;
+    +above($breakpoints.sm)
+      width: 409px;
+      bottom: -44px;
+      left: 158px;
+    +above($breakpoints.md)
+      width: 535px;
+      bottom: -57px;
+      left: 209px;
+    +above($breakpoints.xxl)
+      width: 735px;
+      bottom: -79px;
+      left: 207px;
